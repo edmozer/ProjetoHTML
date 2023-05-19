@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>CALCULAION</title>
+    <style>
+        body 
+    {
+background-color:steelblue;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 21px;
+text-align: center;
+}
+
+h1 {
+color: darkblue;
+
+}
+h2 {color: midnightblue;}
+
+p { 
+    color: midnightblue;
+    text-align: center;
+}
+blockquote {color: brown;}
+li {
+    color: midnightblue;
+}
+
+div {
+    color: navy;
+}
+p { 
+    color: midnightblue;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <img src="calculaion.png" alt="Leao fera em matematica">
+    <h1>Um tricolor de verdade nunca erra uma conta</h1>
+    <p>Nao seja igual unzioto que nao sabem contar quantos campeaonatos cearenses eles tem...</p>
+<h2>Somando valores</h2>
+<input type="number" name="txtn1" id="txtn1"> +
+<input type="number" name="txtn2" id="txtn2">
+<input type="button" value="Somar" onclick="somar()">
+<div id="res">Resultado:</div>
+
+<h2>Subtraindo valores</h2>
+<input type="number" name="sub1" id="sub1"> - 
+<input type="number" name="sub2" id="sub2">
+<input type="button" value="Subtrair" onclick="Subtrair()">
+<div id="ressub">Resultado:</div>
+
+<h2> Multiplicando valores</h2>
+<input type="number" name="multi1" id="multi1"> x 
+<input type="number" name="multi2" id="multi2">
+<input type="button" value="Multiplicar" onclick="Multiplicar()">
+<div id="resmulti">Resultado:</div>
+
+<h2>Dividindo valores</h2>
+<input type="number" name="div1" id="div1"> ÷
+<input type="number" name="div2" id="div2">
+<input type="button" value="Dividir" onclick="Dividir()">
+<div id="resdiv">Resultado:</div>
+
+<p id="homelink">Retorne para a pagina principal <a href="index.html" rel="prev"><u>aqui</u>.</a></p>
+<script>
+    function somar() {
+        var tn1 = window.document.getElementById('txtn1')
+        var tn2 = window.document.getElementById('txtn2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 + n2 
+        res.innerHTML = `A soma entre ${n1} e ${n2} eh igual a <b>${s}</b>`}
+        
+     function Subtrair() {
+        var tn3 = window.document.getElementById('sub1')
+        var tn4 = window.document.getElementById('sub2')
+        var res2 = window.document.getElementById('ressub')
+        var n3 = Number(tn3.value)
+        var n4 = Number(tn4.value)
+        var s2 = n3 - n4 
+        ressub.innerHTML = `A subtracao entre ${n3} e ${n4} eh igual a <b>${s2}</b>`  }
+        
+function Multiplicar() {
+    var tn5 = window.document.getElementById('multi1')
+    var tn6 = window.document.getElementById('multi2')
+    var res3 = window.document.getElementById('resmulti')
+    var n5 = Number(tn5.value)
+    var n6 = Number(tn6.value)
+    var s3 = n5 * n6
+    resmulti.innerHTML = `A multiplicacao entre ${n5} e ${n6} eh igual a <b>${s3}</b>`    }
+
+
+function Dividir() {
+    var tn7 = window.document.getElementById('div1')
+    var tn8 = window.document.getElementById('div2')
+    var res4 = window.document.getElementById('resdiv')
+    var n7 = Number(tn7.value)
+    var n8 = Number(tn8.value)
+    var s4 = n7 / n8
+    resdiv.innerHTML = `A divisao de ${n7} por ${n8} eh igual a <b>${s4}</b>`
+}
+
+       
+</script>
+
+    
+</body>
+</html>

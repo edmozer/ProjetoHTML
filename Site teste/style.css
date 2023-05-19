@@ -1,0 +1,44 @@
+body {
+background-color:steelblue;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 21px;
+text-align: center;
+}
+
+h1 {
+color: darkblue;
+
+}
+h2 {color: midnightblue;}
+
+p { 
+    color: midnightblue;
+    text-align: center;
+}
+blockquote {color: brown;}
+li {
+    color: midnightblue;
+}
+section {
+background-color: white;
+    border-radius: 15px;
+    padding: 50px;
+    width: 700px;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(28, 28, 189, 0.493);
+}
+#msg {
+    background-color: rgb(70, 111, 145);
+    padding: 20px ;
+    margin: auto;
+    border-radius: 15px;
+    width: 467px;
+    box-shadow: 5px 5px 5px rgba(28, 28, 189, 0.493);
+}
+#img1 {
+    background-color: steelblue;
+    box-shadow: 5px 5px 5px rgba(28, 28, 189, 0.493);
+}
+img {
+    box-shadow: 5px 5px 5px rgba(28, 28, 189, 0.493);
+}
